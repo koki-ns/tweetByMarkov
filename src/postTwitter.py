@@ -8,8 +8,22 @@ import markovify
 import genJapanese
 
 
-splitPath = os.path.dirname(__file__) + '/split_text/data.txt'
-paths = os.path.dirname(__file__) + '/texts/*.txt'
+current = os.path.dirname(__file__)
+##ディレクトリのパス
+splitdirPath = current + '/split_text'
+textdirPath = current + '/texts'
+##
+
+##ファイルのパス
+splitPath = current + '/split_text/data.txt'
+paths = current + '/texts/*.txt'
+##
+
+if not os.path.isdir(splitdirPath):
+    os.mkdir(splitdirPath)
+
+if not os.path.isdir(textdirPath):
+    os.mkdir(textdirPath)
 
 if os.path.isfile(splitPath):
     with open(splitPath) as f:
@@ -39,7 +53,7 @@ if generated is None:
 data = {"text": generated}
 
 
-keysPath = os.path.dirname(__file__) + '/keys.json'
+keysPath = current + '/keys.json'
 with open(keysPath) as keys_json:
     keys_dict = json.load(keys_json)
     consumerKey = keys_dict['consumerKey']
