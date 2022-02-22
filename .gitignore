@@ -130,3 +130,6 @@ dmypy.json
 
 # keys for Oauth1.0a
 keys.json
+
+# generated file
+src/split_text/data.txt
