@@ -10,7 +10,7 @@
   
 ### 認証
 twitter apiへはOauth1.0aで認証を行う。  
-その際、アクセストークン等は以下の形式のsrc/keys.jsonから読み込む。  
+その際、アクセストークン等は以下の形式の`src/keys.json`から読み込む。  
   
 **keys.json**
 ```json:keys.json
