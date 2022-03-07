@@ -66,4 +66,4 @@ endpoint = 'https://api.twitter.com/2/tweets'
 twitter = OAuth1Session(consumerKey, consumerSecret, accessToken, accessSecret)
 res = twitter.post(endpoint, json=data)
 
-print(res.status_code)
+print(res.text)

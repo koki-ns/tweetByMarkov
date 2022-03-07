@@ -134,3 +134,7 @@ keys.json
 # generated file
 src/split_text/data.txt
 .DS_Store
+
+# others
+test/
+tweets.txt
