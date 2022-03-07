@@ -1,5 +1,5 @@
 # tweetByMarkov
-テキストファイルのデータを読み込んでmecabによる形態素への分割とmarkovifyによるマルコフ連鎖モデル、文章の生成を行い、ツイートする。  
+テキストファイルのデータを読み込んでmecabによる形態素への分割とmarkovifyによるマルコフ連鎖モデル、文章の生成を行い、自動ツイート及び自動返信をする。  
 
 ### 元となるテキスト
 `src/texts/`配下に元となるテキストファイルを配置する。  
@@ -18,7 +18,8 @@ twitter apiへはOauth1.0aで認証を行う。
     "consumerKey" : "XXXXXXXXXXX",
     "consumerSecret" : "XXXXXXXXXXX",
     "accessToken" : "XXXXX-XXXXXX",
-    "accessSecret" : "XXXXXXXXXXX"
+    "accessSecret" : "XXXXXXXXXXX",
+    "BearerToken" : "XXXXXXXXXXX"
 }
 ```
 
